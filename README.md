@@ -28,10 +28,15 @@ tooltip-000.html を chrome (35.0.1916.153 on MacOXX 10.9.3) で操作した ア
       background: #FEFFED;
     }
 
-(windows の IE で意図したような動作になるかは不明。 IE 環境がないので確認できない... )  
-
 tooltip-001.html を chrome (35.0.1916.153 on MacOXX 10.9.3) で操作した アニメーション gif.
 ![tooltip-001.gif](tooltip-001.gif)
+
+IE での動作は VirtaualBox で確認した。  
+tooltip-001.html を IE10 で操作した アニメーション gif.
+![tooltip-001.gif](tooltip-001-IE10.gif)
+
+tooltip-001.html を IE11 で操作した アニメーション gif.
+![tooltip-001.gif](tooltip-001-IE11.gif)
 
 
 # 参考
@@ -41,7 +46,9 @@ tooltip-001.html を chrome (35.0.1916.153 on MacOXX 10.9.3) で操作した ア
 
 - http://weblan3.com/css/word-break.php  
  > word-break - 文の改行の仕方について指定する  
- 
 
 - http://www.cssportal.com/css-tooltip-generator/  
  > CSS Tooltip Generator  
+
+- http://www.d-wood.com/blog/2014/01/27_5343.html  
+ > MacにIEテスト環境を作る（VirtualBox 編）  
