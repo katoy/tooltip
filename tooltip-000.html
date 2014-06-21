@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tooltipウィジェット</title>
+
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        // 2ツールチップ機能を適用
+        $('#main').tooltip();
+      });
+    </script>
+
+  </head>
+
+  <body>
+
+    参考：<a href="http://www.buildinsider.net/web/jqueryuiref/0023">Tooltipウィジェットでツールチップを表示するには？ (2013年12月19日)</a>
+
+    <hr/>
+    <div>
+      native な tooltip<br/>
+      <a href="#" title="ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ">長い tooktip</a><br/>
+      <a href="#" title="1234567890 12345678901234567890 123456789012345678901234567890 1234567890123456789012345678901234567890">複数行の tooktip</a>
+    </div>
+
+    <hr/>
+    <div id="main">
+      jquery をつかった tooltip<br/><br/>
+      <a href="#" title="ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"> 長い tooltip</a><br/>
+      <a href="#" title="1234567890 12345678901234567890 123456789012345678901234567890 1234567890123456789012345678901234567890">複数行の tooktip</a>
+
+
+      <table border="1">
+	<thead>
+	  <tr>
+	    <th>番号</th>
+	    <th>名前</th>
+	    <th>備考</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+	    <td>1</td>
+	    <td title="ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"> td への長い tooltip</td>
+	    <td title="1234567890 12345678901234567890 123456789012345678901234567890 1234567890123456789012345678901234567890">td への複数行の tooktip</rd>
+	  </tr>
+	  <tr>
+	    <td>2</td>
+	    <td><a href="#" title="ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"> a への長い tooltip</a></td>
+	    <td><a href="#" title="1234567890 OOOOOOOOOO iiiiiiiiii 12345678901234567890 1234567890123456789012345678901234567890">a への複数行の tooktip</a></td>
+	  </tr>
+	</tbody>
+      </table>
+    </div>
+
+  </body>
+</html>
+
