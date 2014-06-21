@@ -8,15 +8,17 @@ browser (Chrome) での
 tooltip-000.html を chrome (35.0.1916.153 on MacOXX 10.9.3) で操作した アニメーション gif.
 ![tooltip-000.gif](tooltip-000.gif)
 
+## 次のことを実現したい。
 - 表示フォントを指定する (等幅フォントに)
 - 長い文字列を適宜 折り返し表示させる。
 - 角丸にする。
 
+
 # 対処
 
-css で .ui-tooltip に　等幅フォントを指定する。
-折り返し方法を指定する。
-corner-round を指定する。
+- css で .ui-tooltip に　等幅フォントを指定する。
+- 折り返し方法を指定する。
+- corner-round を指定する。
 
     .ui-tooltip {
       font-family: Osaka-mono, "Osaka-等幅", "ＭＳ ゴシック", monospace; font-size: 20px;
@@ -25,6 +27,8 @@ corner-round を指定する。
       border-radius: 6px;
       background: #FEFFED;
     }
+
+(windows の IE で意図したような動作になるかは不明。 IE 環境がないので確認できない... )  
 
 tooltip-001.html を chrome (35.0.1916.153 on MacOXX 10.9.3) で操作した アニメーション gif.
 ![tooltip-001.gif](tooltip-001.gif)
