@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tooltipウィジェット</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+       $(function () {
+         $('[data-toggle=tooltip]').tooltip({
+           placement: 'bottom'
+         });
+       });
+    </script>
+    <style>
+      /** See https://github.com/twbs/bootstrap/blob/master/less/tooltip.less **/
+      .tooltip-inner {
+        max-width: 240px;
+        font-family: Osaka-mono, "Osaka-等幅", "ＭＳ ゴシック", monospace; font-size: 20px;
+        word-wrap: break-word;
+        text-align: left;   /** center */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      native な tooltip<br/>
+      <a href="#" title="ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ">長い tooktip</a><br/>
+      <a href="#" title="1234567890 12345678901234567890 123456789012345678901234567890 1234567890123456789012345678901234567890">複数行の tooktip</a>
+    </div>
+
+    <hr/>
+    <div id="main">
+      bootstarap をつかった tooltip<br/><br/>
+      <a href="#" data-toggle="tooltip" title="ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"> 長い tooltip</a><br/>
+      <a href="#" data-toggle="tooltip" title="1234567890 12345678901234567890 123456789012345678901234567890 1234567890123456789012345678901234567890">複数行の tooktip</a>
+
+      <table border="1">
+	<thead>
+	  <tr>
+	    <th>番号</th>
+	    <th>名前</th>
+	    <th>備考</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+	    <td>1</td>
+	    <td data-toggle="tooltip" title="ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"> td への長い tooltip</td>
+	    <td data-toggle="tooltip" title="1234567890 12345678901234567890 123456789012345678901234567890 1234567890123456789012345678901234567890">td への複数行の tooktip</td>
+          </tr>
+	  <tr>
+	    <td>2</td>
+	    <td>
+	      <div data-toggle="tooltip" title="ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"> div への長い tooltip</div>
+	    </td>
+	    <td>
+	      <div data-toggle="tooltip" title="1234567890 12345678901234567890 123456789012345678901234567890 1234567890123456789012345678901234567890">div への複数行の tooktip</div>
+            </td>
+          </tr>
+          <tr>
+	    <td>3</td>
+	    <td><a href="#" data-toggle="tooltip" title="ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"> a への長い tooltip</a></td>
+	    <td><a href="#" data-toggle="tooltip" title="1234567890 OOOOOOOOOO iiiiiiiiii 12345678901234567890 1234567890123456789012345678901234567890">a への複数行の tooktip</a></td>
+	  </tr>
+	</tbody>
+      </table>
+
+      <br/>
+      <div>
+	td への tooltip 表示をさせると 右隣のセル表示がくずれる。（1 行目の２列目)<br/>
+	そこで セル値を div でかこって、そこに tooltip を設定した (2 行目)。
+      </div>
+
+    </div>
+
+  </body>
+</html>
+

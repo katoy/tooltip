@@ -28,15 +28,24 @@ tooltip-000.html を chrome (35.0.1916.153 on MacOXX 10.9.3) で操作した ア
       background: #FEFFED;
     }
 
-tooltip-001.html を chrome (35.0.1916.153 on MacOXX 10.9.3) で操作した アニメーション gif.
+[tooltip-001.html] を chrome (35.0.1916.153 on MacOXX 10.9.3) で操作した アニメーション gif.
 ![tooltip-001.gif](tooltip-001.gif)
 
 IE での動作は VirtaualBox で確認した。  
-tooltip-001.html を IE10 で操作した アニメーション gif.
+[tooltip-001.html] を IE10 で操作した アニメーション gif.
 ![tooltip-001.gif](tooltip-001-IE10.gif)
 
-tooltip-001.html を IE11 で操作した アニメーション gif.
+[tooltip-001.html] を IE11 で操作した アニメーション gif.
 ![tooltip-001.gif](tooltip-001-IE11.gif)
+
+# 付録
+
+## bootstap の tooltip とそのカスタマイズ
+
+[tooltip-001-bootstrap.html] を chrome (35.0.1916.153 on MacOXX 10.9.3) で操作した アニメーション gif.
+![tooltip-001.gif](tooltip-001-bootstrap.gif)
+
+## css だけで tooltip 表示
 
 
 # 参考
@@ -52,3 +61,6 @@ tooltip-001.html を IE11 で操作した アニメーション gif.
 
 - http://www.d-wood.com/blog/2014/01/27_5343.html  
  > MacにIEテスト環境を作る（VirtualBox 編）  
+
+- http://getbootstrap.com/javascript/#tooltips  
+ > bootstrap API  
