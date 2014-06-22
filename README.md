@@ -5,7 +5,7 @@ browser (Chrome) での
 　　jquery での tooltip 表示  
 ともに満足できる表現ではない。  
 
-tooltip-000.html を chrome (35.0.1916.153 on MacOXX 10.9.3) で操作した アニメーション gif.
+tooltip-000.html を chrome (35.0.1916.153 on MacOSX 10.9.3) で操作した アニメーション gif.
 ![tooltip-000.gif](tooltip-000.gif)
 
 ## 次のことを実現したい。
@@ -28,7 +28,7 @@ tooltip-000.html を chrome (35.0.1916.153 on MacOXX 10.9.3) で操作した ア
       background: #FEFFED;
     }
 
-[tooltip-001.html] を chrome (35.0.1916.153 on MacOXX 10.9.3) で操作した アニメーション gif.
+[tooltip-001.html] を chrome (35.0.1916.153 on MacOSX 10.9.3) で操作した アニメーション gif.
 ![tooltip-001.gif](tooltip-001.gif)
 
 IE での動作は VirtaualBox で確認した。  
@@ -40,12 +40,16 @@ IE での動作は VirtaualBox で確認した。
 
 # 付録
 
-## bootstap の tooltip とそのカスタマイズ
+## bootstrap の tooltip とそのカスタマイズ
 
-[tooltip-001-bootstrap.html] を chrome (35.0.1916.153 on MacOXX 10.9.3) で操作した アニメーション gif.
+[tooltip-001-bootstrap.html] を chrome (35.0.1916.153 on MacOSX 10.9.3) で操作した アニメーション gif.
 ![tooltip-001.gif](tooltip-001-bootstrap.gif)
 
 ## css だけで tooltip 表示
+
+[tooltip-001-css.html] を chrome (35.0.1916.153 on MacOSX 10.9.3) で操作した アニメーション gif.
+![tooltip-001.gif](tooltip-001-css.gif)
+
 
 
 # 参考
