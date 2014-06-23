@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tooltipウィジェット</title>
+
+    <link rel="stylesheet" type="text/css" href="my-tooltip-bottom.css" />
+  </head>
+
+  <body>
+
+    <div>
+      native な tooltip<br/>
+      <a href="#" title="ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ">長い tooktip</a><br/>
+      <a href="#" title="1234567890 12345678901234567890 123456789012345678901234567890 1234567890123456789012345678901234567890">複数行の tooktip</a>
+    </div>
+
+    <hr/>
+    <div id="main">
+
+      css をつかった tooltip<br/>
+      See: <a href="http://cbracco.me/a-simple-css-tooltip/">http://cbracco.me/a-simple-css-tooltip/</a></br>
+      <br/>
+
+      <div data-tooltip="ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"><a href="#">長い tooltip</div>
+      <div data-tooltip="ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"><a href="#">長い tooltip</div>
+      <div data-tooltip="1234567890 12345678901234567890 123456789012345678901234567890 1234567890123456789012345678901234567890"><a href="#">複数行の tooktip</a>
+      </div>
+
+      <table border="1">
+	<thead>
+	  <tr>
+	    <th>番号</th>
+	    <th>名前</th>
+	    <th>備考</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+	    <td>1</td>
+	    <td>
+<div data-tooltip="ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ">td への長い tooltip</div></td>
+	    <td><div data-tooltip="1234567890 12345678901234567890 123456789012345678901234567890 1234567890123456789012345678901234567890">td への複数行の tooktip</td></div>
+	  </tr>
+	  <tr>
+	    <td>2</td>
+	    <td><div data-tooltip="ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"
+><a href="#"> a への長い tooltip</a></div></td>
+	    <td><div data-tooltip="1234567890 OOOOOOOOOO iiiiiiiiii 12345678901234567890 1234567890123456789012345678901234567890"
+><a href="#">a への複数行の tooktip</a></div></td>
+	  </tr>
+	</tbody>
+      </table>
+
+ZZZZZZZZZZZZZZZ<br/>
+ZZZZZZZZZZZZZZZ<br/>
+ZZZZZZZZZZZZZZZ<br/>
+    </div>
+
+  </body>
+</html>
+

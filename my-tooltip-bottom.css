@@ -1,0 +1,74 @@
+/** See  http://cbracco.me/a-simple-css-tooltip/ **/
+/* Some basic styles */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+}
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    margin-top: 10px;
+    margin-left: 40px;
+    padding: 7px;
+    width: 240px;
+    word-wrap: break-word;
+    border-radius: 6px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius:    3px;
+    border-radius:         3px;
+    background-color: #F00;
+    color: #000;
+    content: attr(data-tooltip);
+    text-align: left; /* center; */
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: Osaka-mono, "Osaka-等幅", "ＭＳ ゴシック", monospace;
+    background-color: #F00;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    margin-left: 80px;
+    width: 0;
+    border-bottom: 10px solid #F00;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+    visibility: visible;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
