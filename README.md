@@ -50,6 +50,7 @@ IE での動作は VirtaualBox で確認した。
 [tooltip-001-css.html] を chrome (35.0.1916.153 on MacOSX 10.9.3) で操作した アニメーション gif.
 ![tooltip-001.gif](tooltip-001-css.gif)
 
+[tooltip-001-css-bottom.html] tooltip を下側に表示させる例。  
 
 
 # 参考
